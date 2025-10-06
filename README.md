@@ -18,9 +18,8 @@ with embeddings powered by SentenceTransformers and vector search via FAISS.
 The frontend provides an interactive chat that lets users naturally learn more about Ryan through AI-generated responses.
 
 
-## Project Plan - This is the plan I developed and followed throughout the course of this project.
-
----
+## Project Plan
+This is the plan I developed and followed throughout the course of this project.
 
 ### Stage 1: Backend AI Development Prototype
 **Goal:** Establish a functional AI logic module that operates independently.  
@@ -32,7 +31,6 @@ The frontend provides an interactive chat that lets users naturally learn more a
 - Implemented the `get_response()` method
 - Tested locally using a `while True` loop
 
----
 
 ### Stage 2: Flask Backend Skeleton
 **Goal:** Set up a server to connect the frontend interface with the AI.  
@@ -46,7 +44,6 @@ The frontend provides an interactive chat that lets users naturally learn more a
 - Returned structured JSON responses from the AI
 - Tested endpoints using Postman and an early frontend prototype
 
----
 
 ### Stage 3: Local Frontend Prototype
 **Goal:** Build a functional website interface for interacting with the AI.  
@@ -59,7 +56,6 @@ The frontend provides an interactive chat that lets users naturally learn more a
 - Implemented a JavaScript `fetch()` call to the `/ask` endpoint
 - Displayed AI responses dynamically on the webpage
 
----
 
 ### Stage 4: AI Upgrade / Real Model Integration
 **Goal:** Replace the prototype AI with a real pretrained model and personal context.  
@@ -72,7 +68,6 @@ The frontend provides an interactive chat that lets users naturally learn more a
 - Replaced the placeholder logic in `get_response()` with real inference
 - Conducted local accuracy and performance testing
 
----
 
 ### Stage 5: Frontend Polishing and Styling
 **Goal:** Refine the website design for a professional and responsive appearance.  
@@ -84,9 +79,8 @@ The frontend provides an interactive chat that lets users naturally learn more a
 - Ensured full responsiveness for both desktop and mobile devices
 - Added optional visual enhancements such as animations and chat-like AI responses
 
----
 
-### ☁️ Stage 6: Deployment
+### Stage 6: Deployment
 **Goal:** Deploy the full-stack application for public access.  
 **Status:** In-progress
 **Outcome:** An accessible, AI-powered personal website hosted online.
