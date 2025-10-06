@@ -1,8 +1,8 @@
-# Author: Ryan Wilkerson
+## Author: Ryan Wilkerson
 
-# Version: 1.0.0
+## Version: 1.0.0
 
-# Built with Llama 3.2 🦙
+## Built with Llama 3.2
 
 This project uses **Meta Llama 3.2**, a large language model released by Meta under the **Llama 3.2 Community License Agreement**.  
 Llama 3.2 is licensed under the [Llama 3.2 Community License](https://www.llama.com/llama3_2/license)  
