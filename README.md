@@ -8,8 +8,6 @@ This project uses **Meta Llama 3.2**, a large language model released by Meta un
 Llama 3.2 is licensed under the [Llama 3.2 Community License](https://www.llama.com/llama3_2/license)  
 **Copyright © Meta Platforms, Inc. All Rights Reserved.**
 
-> **“Built with Llama”**
-
 Use of Llama 3.2 and its outputs is subject to Meta’s [Acceptable Use Policy](https://www.llama.com/llama3_2/use-policy).
 
 Desc: A full-stack personal website with a built in AI assistant designed to answer questions about
