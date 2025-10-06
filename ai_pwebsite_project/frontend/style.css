@@ -1,0 +1,481 @@
+/* 
+    File: style.css
+    Author: Ryan Wilkerson
+    Version: 10/3/2025
+    Description: CSS styles for the personal portfolio website.
+*/
+
+/* Reset default styles and set box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to left, #1e1e1e 56%, #a88fff 100%);
+}
+
+/* Introduction Card styling with fade-in animation */
+.intro-card {
+    background-color: rgba(30, 30, 30, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin: 10px auto;
+    color: #f5f5f5;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Navigation bar styling */
+.nav {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation list layout */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+/* Navigation links styling */
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for nav buttons */
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Right Side Image styling for About Me */
+.aboutme-page .right-side-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform:(translateX(100%));
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+/* Right Side Image styling for Projects */
+.projects-page .right-side-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform:(translateX(100%));
+    animation: fadeInScale 2.0s ease-out forwards;
+}
+
+/* Right Side Image styling for Skills */
+.skills-page .right-side-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform:(translateX(-100%));
+    animation: slideInDown 1.5s ease-out forwards;
+}
+
+/* Right Side Image styling for Contact */
+.contact-page .right-side-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform:(translateX(100%));
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+/* Image styling with gradient mask */
+.right-side-image img {
+    height: 100%;
+    object-fit: ccover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+
+/* Keyframes for sliding in from left */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Left Side Image styling for About Me */
+.aboutme-page .left-side-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateX(-100%);
+    animation: slideInLeft 1.5s ease-out forwards;
+}
+
+/* Left Side Image styling for Projects */
+.projects-page .left-side-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateX(-100%);
+    animation: fadeInScale 2.0s ease-out forwards;
+}
+
+/* Left Side Image styling for Skills */
+.skills-page .left-side-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateY(100%);
+    animation: slideInUp 1.5s ease-out forwards;
+}
+
+/* Left Side Image styling for Contact */
+.contact-page .left-side-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    transform: translateX(-100%);
+    animation: slideInRight 1.5s ease-out forwards;
+}
+
+/* Image styling with gradient mask */
+.left-side-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+
+/* Keyframes for sliding in from right */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Keyframes for fade in and scale */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Keyframes for sliding in from top */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for sliding in from bottom */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Specific gradient masks for Skills page Left Image */
+.skills-page .left-side-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-composite: intersect;
+}
+
+/* Specific gradient masks for Skills page Right Image */
+.skills-page .right-side-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-composite: intersect;
+}
+
+/* Specific gradient masks for Contact page Left Image */
+.contact-page .left-side-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-composite: intersect;
+}
+
+/* Specific gradient masks for Contact page Right Image */
+.contact-page .right-side-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.95);
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0)),
+        linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-composite: intersect;
+}
+
+/* Chatbot container */
+#chat-container {
+    width: 60%;
+    max-width: 800px;
+    height: 400px;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    font-size: 0.95rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* default left alignment */
+}
+
+/* Individual message styling */
+.message {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 70%;
+    line-height: 1.4;
+    word-wrap: break-word;
+}
+
+/* User message styling */
+.user-message {
+    background: #4c4c9d;
+    color: #fff;
+    align-self: flex-end;
+    margin-left: auto;   /* pushes it right */
+}
+
+/* AI message styling */
+.ai-message {
+    background: #3c3c3c;
+    color: #eaeaea;
+    align-self: flex-start;
+    margin-right: auto;  /* keeps it left */
+}
+
+/* Input area styling */
+#input-area {
+    display: flex;
+    width: 60%;
+    max-width: 600px;
+    background: #2e2e2e;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* User input field styling */
+#user-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #f5f5f5;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Send button styling */
+#send-button {
+    background: #6d6df8;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Send button hover effect */
+#send-button:hover {
+    background-color: #5757f5;
+}
+
+/* Placeholder text styling */
+#user-input::placeholder {
+    color: #bbbbbb;
+    opacity: 1;
+}
+
+/* Cards Styling based on About Me page */
+.about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 10000px;
+}
+
+/* Individual Card styling with slide-in animation */
+.about-card {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+/* Text styling within Cards */
+.about-card p, .about-card ul {
+    color: #f5f5f5;
+    line-height: 1.8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* List styling within Cards */
+.about-card ul {
+    padding-left: 30px;
+}
+
+/* Heading styling within Cards */
+.about-card h3, h4 {
+    color: #f5f5f5;
+    margin-top: 12.5px;
+}
+
+/* List item spacing within Cards */
+.about-card ul li {
+    margin-bottom: 5px;
+}
+
+/* Animation trigger class for Cards */
+.about-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Alignment classes for Cards */
+.card-left {
+    align-self: flex-start;
+    margin-left: 80px;
+}
+
+.card-right {
+    align-self: flex-end;
+    margin-right: 80px;
+}
+
+.card-center {
+    align-self: center;
+    margin: 0 auto;
+}
+
+/* Link styling within Cards */
+.about-card a {
+    color: #00ffff; /* bright cyan */
+}
+
+/* Link hover effect within Cards */
+.about-card a:hover {
+    color: #66ffff; /* lighter cyan on hover */
+}

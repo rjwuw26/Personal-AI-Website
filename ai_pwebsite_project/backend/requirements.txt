@@ -1,0 +1,11 @@
+flask
+flask-cors
+torch
+transformers
+sentence-transformers
+faiss-cpu
+bitsandbytes
+numpy
+huggingface_hub
+accelerate
+python-dotenv

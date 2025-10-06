@@ -1,0 +1,98 @@
+AI Personal Website Project - Development Log
+
+Model Attribution
+
+This project uses Llama 3, licensed under the LLAMA 3 Community License, Copyright (c) Meta Platforms, Inc. All Rights Reserved.
+
+Plan for this Project:
+
+Stage 1: Backend AI Development Prototype
+
+    Goal: Make sure your AI logic works independently.
+    Status: Done
+    Tasks:
+
+    Created PersonalAI class in ai_model.py
+
+    Implemented get_response() method
+
+    Tested locally with while True loop
+
+    Outcome: We have a functioning AI module that can answer questions.
+
+Stage 2: Flask Backend Skeleton
+
+    Goal: Set up a server that connects the frontend to your AI.
+    Status: Done
+    Tasks:
+
+    Create app.py with Flask.
+
+    Import PersonalAI and create an instance.
+
+    Create an API route (/ask) to accept POST requests with a question.
+
+    Return JSON responses from AI.
+
+    Test using Postman or a simple frontend later.
+
+    Outcome: The AI can be queried via HTTP requests. Frontend integration becomes trivial.
+
+Stage 3: Local Frontend Prototype
+
+    Goal: Build a simple website to interact with your AI.
+    Status: Done
+    Tasks:
+
+    Basic HTML structure with sections (About, Projects, Contact, AI Q&A).
+
+    Input box and submit button for user questions.
+
+    JS fetch call to /ask endpoint in Flask.
+
+    Display AI responses dynamically on the page.
+
+    Outcome: Users can type a question and see a response — the personal AI is live locally.
+
+Stage 4: AI Upgrade / Real Model Integration
+
+    Goal: Swap the dummy AI with a real pretrained model or RAG system.
+    Status: Done
+    Tasks:
+
+    Choose a lightweight open-source model (GPT-Neo, LLaMA, MPT, etc.).
+
+    Add personal context (resume, project descriptions) as input for the model.
+
+    Replace get_response() logic in PersonalAI with real inference.
+
+    Test locally and verify accuracy.
+
+    Outcome: The AI answers questions intelligently and contextually.
+
+Stage 5: Polishing & Styling Frontend
+
+    Goal: Make the website look professional and interactive.
+    Status: Done
+    Tasks:
+
+    Add CSS styling for modern design.
+
+    Make it responsive for mobile and desktop.
+
+    Optional: animations, project cards, or AI response chat bubble styling.
+
+    Outcome: Portfolio-ready website with integrated AI demo.
+
+Stage 6: Deployment
+
+    Goal: Host the project on the internet so others can access it.
+    Tasks:
+
+    Deploy Flask backend to cloud (Heroku, Render, or another free tier).
+
+    Deploy frontend to GitHub Pages or same server.
+
+    Test live AI interaction.
+
+    Outcome: Public-facing AI-powered personal website.

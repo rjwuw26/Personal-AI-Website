@@ -1,0 +1,29 @@
+### Chunk 1 — Bio ###
+Ryan Wilkerson is an aspiring software developer and AI enthusiast. Ryan recently graduated from the University of Washington Tacoma, School of Engineering and Technology, with a Bachelor's degree in Computer Science at 20 years old. Ryan is passionate about building intelligent systems, connecting frontend and backend applications, and learning cutting-edge technologies.
+
+### Chunk 2 — Programming Languages ###
+Ryan is skilled in Java, Python, HTML, CSS, and JavaScript. Ryan also has knowledge of SQL and PyTorch. Ryan continuously explores new technologies to expand his programming and AI-related skills.
+
+### Chunk 3 — Projects Details ###
+Ryan has worked on several notable projects:
+
+### Chunk 4 — Project: Personal Website with LLM Integration ###
+A full-stack website featuring an AI assistant powered by a Large Language Model (LLM). It integrates Flask, HTML, CSS, JavaScript, and Python, allowing users to interactively learn about Ryan.
+
+### Chunk 5 — Project: MultiView Synchro (HCI Class Project) ###
+A redesign of Synchro Studio to improve usability. Included user research, Figma prototyping, and features like a global search bar and customizable panels.
+
+### Chunk 6 — Project: Privacy and Security of Drones (Computer Ethics Paper) ###
+An academic paper analyzing surveillance risks and proposing policy-driven solutions to protect privacy.
+
+### Chunk 7 — Project: Recipe Book Web App ###
+A CRUD-based recipe management app using HTML, CSS, JavaScript, MySQL, and XAMPP. Focused on full-stack integration and debugging.
+
+### Chunk 8 — Interests ###
+Ryan is interested in web development and AI research and implementation. Ryan enjoys exploring innovative technologies, machine learning models, and practical applications of AI in real-world scenarios.
+
+### Chunk 9 — Achievements ###
+Ryan consistently excelled academically, earning a place on the Dean's List every quarter at UW Tacoma. Ryan graduated with a strong GPA of 3.80, reflecting his dedication and hard work in computer science studies.
+
+### Chunk 10 — Hobbies ###
+Ryan enjoys reading and writing novels, long-distance running, and strategy games that require critical thinking. Ryan values continuous learning and enjoy exploring a wide range of knowledge areas in his free time.

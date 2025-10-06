@@ -1,0 +1,91 @@
+<!--
+  File: aboutme.html
+  Author: Ryan Wilkerson
+  Version: 10/3/2025
+  Description: Main landing page for personal website with LLM integration.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Personal Website - About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="aboutme-page">
+
+    <!-- About Me Section -->
+    <div class ="intro-card">
+        <h1>Greetings! My name is Ryan Wilkerson!</h1>
+        <p> 
+            I am 20 years old and recently graduated from the University of Washington Tacoma with a Bachelors in Computer Science 
+            and have a passion for web development and research in artificial intelligence. Below you can find out more about me with the navigation 
+            bar or you can ask my personal AI assistant, Ry!
+        </p>
+    </div>
+
+    <!-- Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="projects.html">Work & Projects</a></li>
+            <li><a href="skills.html">Personal Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Right Side Image-->
+    <div class="right-side-image">
+        <img src="images/ryan.jpg" alt="Picture of Ryan Wilkerson">
+    </div>
+
+    <!-- Left Side Image-->
+    <div class="left-side-image">
+        <img src="images/uw.jpg" alt="Picture of UW Tacoma">
+    </div>
+
+    <!-- Chat container -->
+    <div id="chat-container">
+        <!-- Messages will appear here -->
+    </div>
+
+    <!-- Input area -->
+    <div id="input-area">
+        <input type="text" id="user-input" placeholder="Type your question...">
+        <button id="send-button">Send</button>
+    </div>
+
+    <!-- About Me Cards Section -->
+    <section class="about-cards">
+        <div class="about-card card-left">
+            <h3>Education</h3>
+            <p>B.S. in Computer Science, University of Washington Tacoma (2025). Focused on full-stack development, databases, and NLP/LLM research.</p>
+        </div>
+
+        <div class="about-card card-right">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Long-distance running and occassional racing</li>
+                <li>Reading and writing novels</li>
+                <li>Strategy and cooperative video games</li>
+            </ul>
+        </div>
+
+        <div class="about-card card-left">
+            <h3>Interests</h3>
+            <ul>
+                <li>Web development & intuitive UI design</li>
+                <li>AI research: NLP, deep learning and large language models</li>
+                <li>Tech ethics and real-world applications</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Link to JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
