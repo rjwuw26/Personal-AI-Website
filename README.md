@@ -94,15 +94,13 @@ Demo Mode - This mode lets anyone instantly try the website without needing a Hu
 
 2. (Optionl) Create a virtual environment:
 
-     python -m venv venv
+     `python -m venv venv`
 
    To activate:
 
-     Windows:
-       venv\Scripts\activate
-     Linux:
-       source venv/bin/activate
+     Windows: `venv\Scripts\activate`
+     Linux: `source venv/bin/activate`
 
 3. Install dependencies - Inside the "backend" folder, run:
 
-     pip install -r requirements.txt
+     `pip install -r requirements.txt`
