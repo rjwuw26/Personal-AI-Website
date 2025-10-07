@@ -86,6 +86,34 @@ class PersonalAI:
                     texts.extend([chunk.strip() for chunk in chunks if chunk.strip()])
         return texts
 
+        # Note: Version of answer_question() without LLaMA generation for quick view and demo. Uncomment this version to use and comment out the other.
+    """
+    def answer_question(self, question: str) -> str:
+        # Hardcoded list of projects (only used for list-style questions)
+        project_list = [
+            "• Personal Website with LLM Integration",
+            "• MultiView Synchro (HCI Class Project)",
+            "• Privacy and Security of Drones (Ethics Paper)",
+            "• Recipe Book Web App"
+        ]
+        qlow = question.lower()
+        if any(k in qlow for k in ["list", "projects", "portfolio", "what projects", "name projects"]):
+            return "\n".join(project_list)
+
+        # Embed the question and do FAISS search
+        q_emb = self.embedding_model.encode([question], convert_to_numpy=True)
+        # use TOP_K from config or hardcode small k
+        distances, indices = self.index.search(q_emb, min(5, len(self.texts)))
+        context_chunks = [self.texts[int(i)] for i in indices[0] if int(i) < len(self.texts)]
+        # Join the top chunks and return a trimmed response
+        context_text = "\n\n".join(context_chunks).strip()
+        if not context_text:
+            return "I don't know."
+        # Short summary fallback: return top chunk or the first ~400 chars
+        top = context_chunks[0].strip()
+        return top if len(top) < 500 else top[:500].rsplit(" ", 1)[0] + "..."
+    """
+    
     def answer_question(self, question: str) -> str:
         """
         Answers a question using the personal data and LLaMA model generation.
@@ -173,3 +201,4 @@ if __name__ == "__main__":
         if q.lower() in ["quit", "exit"]:
             break
         print("\nAI:", ai.answer_question(q), "\n")
+
