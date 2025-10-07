@@ -104,3 +104,5 @@ Demo Mode - This mode lets anyone instantly try the website without needing a Hu
 3. Install dependencies - Inside the "backend" folder, run:
 
      `pip install -r requirements.txt`
+
+4. Ensure ai_model.py is in Demo Mode - to run the code in demo mode, simply uncomment the answer_question() method with the "Demo" label and comment out the other method below it with the "full version" label.
