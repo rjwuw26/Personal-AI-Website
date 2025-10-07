@@ -106,3 +106,30 @@ Demo Mode - This mode lets anyone instantly try the website without needing a Hu
      `pip install -r requirements.txt`
 
 4. Ensure ai_model.py is in Demo Mode - to run the code in demo mode, simply uncomment the answer_question() method with the "Demo" label and comment out the other method below it with the "full version" label.
+
+5. Run the backend server - Start the Flask app by running:
+
+     `python app.py`
+
+   You should see output like:
+
+   ` * Running on all addresses (0.0.0.0)`
+   ` * Running on http://127.0.0.1:5000`
+   ` * Running on http://192.168.1.20:5000`
+
+6. Next, start the frontend by navigating to "aboutme.html". Right click anywhere in the file and click "Open with Live Server" (you can also do this by right clicking the file name in the file explorer in VS Code).
+
+   This will open your browser to:
+
+     `http://127.0.0.1:5500/frontend/aboutme.html`
+
+7. You can now freely navigate the application's pages as well as interact with the AI to get quick and simple responses for quick viewing.
+
+8. (Optional) To directly interact with the AI in the console, run:
+
+     `python ai_model.py`
+
+
+Option Two:
+
+Full Version - By default, the project is already in Full Version. Make no changes to the code in `ai_model.py`.
