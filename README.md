@@ -179,6 +179,10 @@ Full Version - By default, the project is already in Full Version. Make no chang
 
 Figure 1: Home page (aboutme.html)
 
-<img width="1846" height="1023" alt="image" src="https://github.com/user-attachments/assets/689fb30e-a2e7-4d0c-a700-65e3c976e7af" />
+<img width="1500" height="800" alt="image" src="https://github.com/user-attachments/assets/689fb30e-a2e7-4d0c-a700-65e3c976e7af" />
+
+Figure 2: Contact page (contact.html)
+
+<img width="1500" height="800" alt="image" src="https://github.com/user-attachments/assets/75ff5642-3a94-4ce6-93f9-46d6b9dd0ba0" />
 
 
