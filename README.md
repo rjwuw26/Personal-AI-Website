@@ -190,4 +190,11 @@ Figure 2: Contact page (contact.html)
 
 ---
 
+Final Notes:
+
+- Memory & Hardware Requirements: Running the full LLaMA 3.2 3B Instruct model locally may require a moderate amount of system resources. Running on a CPU may result in slower response times or failure to load the model.
+- Hugging Face Access: To run the full version, explicit permission to the model and a valid Hugging Face token is required. Permission can take time to be granted.
+- Demo Mode limitations: The Demo Mode will only feed answers based on the context directly, not generated from an AI.
+- Localhost URLs: When running the project locally, the frontend may be served via Live Server (VS Code) or similar. The backend Flask server will run on http://127.0.0.1:5000.
+- Potential Issues: Common issues include missing `.env` file, incorrect Hugging Face token, or Python package version conflicts. Ensure all dependencies are installed.
 
