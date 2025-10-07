@@ -86,7 +86,7 @@ class PersonalAI:
                     texts.extend([chunk.strip() for chunk in chunks if chunk.strip()])
         return texts
 
-        # Note: Version of answer_question() without LLaMA generation for quick view and demo. Uncomment this version to use and comment out the other.
+    # DEMO: Version of answer_question() without LLaMA generation for quick view and demo. Uncomment this version to use and comment out the other.
     """
     def answer_question(self, question: str) -> str:
         # Hardcoded list of projects (only used for list-style questions)
@@ -114,6 +114,7 @@ class PersonalAI:
         return top if len(top) < 500 else top[:500].rsplit(" ", 1)[0] + "..."
     """
     
+    # Note: This is the full version of answer_question() with LLaMA generation. Comment out this version to use the simpler one above.
     def answer_question(self, question: str) -> str:
         """
         Answers a question using the personal data and LLaMA model generation.
@@ -201,4 +202,5 @@ if __name__ == "__main__":
         if q.lower() in ["quit", "exit"]:
             break
         print("\nAI:", ai.answer_question(q), "\n")
+
 
