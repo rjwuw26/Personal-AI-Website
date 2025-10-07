@@ -2,7 +2,7 @@ Author: Ryan Wilkerson
 
 Version: 1.0.0
 
-Built with Llama 3.2
+Built with Llama 3.2-3B Instruct
 
 This project uses **Meta Llama 3.2**, a large language model released by Meta under the **Llama 3.2 Community License Agreement**.  
 Llama 3.2 is licensed under the [Llama 3.2 Community License](https://www.llama.com/llama3_2/license)  
@@ -82,6 +82,12 @@ Tasks:
 - Ensured full responsiveness for both desktop and mobile devices
 - Added optional visual enhancements such as animations and chat-like AI responses
 
+---
 
+Running the Project - Below are two viable options for running this project locally
 
+Option One: Demo Mode
+
+This mode lets anyoneinstantly try the website without needing a Hugging Face account or heavy model files.
+1. 
 
