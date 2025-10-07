@@ -15,6 +15,7 @@ Ryan Wilkerson. The system uses a Flask backend integrated with a local LLaMA 3.
 with embeddings powered by SentenceTransformers and vector search via FAISS.
 The frontend provides an interactive chat that lets users naturally learn more about Ryan through AI-generated responses.
 
+---
 
 Project Plan
 This is the plan I developed and followed throughout the course of this project.
