@@ -101,7 +101,7 @@ Demo Mode - This mode lets anyone instantly try the website without needing a Hu
      Windows: `venv\Scripts\activate`
      Linux: `source venv/bin/activate`
 
-3. Install dependencies - Inside the "backend" folder, run:
+3. Install dependencies - Ensure you have Python 3.10+ installed, inside the "backend" folder, run:
 
      `pip install -r requirements.txt`
 
@@ -133,3 +133,46 @@ Demo Mode - This mode lets anyone instantly try the website without needing a Hu
 Option Two:
 
 Full Version - By default, the project is already in Full Version. Make no changes to the code in `ai_model.py`.
+
+**Important Note:** This option requires a Hugging Face account and explicit access to the LLaMA 3.2 3B Instruct model. Without this, the code will not be able to load the model.
+
+1. Download the files from GitHub and extract anywhere on your computer. Open 'backend' folder in VS Code, terminal, or any workspace.
+
+2. (Optionl) Create a virtual environment:
+
+     `python -m venv venv`
+
+   To activate:
+
+     Windows: `venv\Scripts\activate`
+     Linux: `source venv/bin/activate`
+
+3. Install dependencies - Ensure you have Python 3.10+ installed, inside the "backend" folder, run:
+
+     `pip install -r requirements.txt`
+
+4. Acquire permission from Hugging Face:
+
+   - Navigate to https://huggingface.co/
+   - Create a free account if you don't already have one
+   - Navigate to the LLaMA 3.2 3B Instruct model page: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+   - Click "Access Repository" (or similar) and follow instructions
+   - Accept the LLaMA 3.2 Community License to gain permission to use the model
+
+   (Note: permission will take time, between an 1 to 24 hours after submission)
+
+5. Generate Personal Access Token
+
+   - Go to your Hugging Face Settings and find Access Tokens
+   - Click "New Token", give it a name and select `read` permissions.
+   - Copy the generated token - you'll need it in the next step.
+
+6. Configure Project
+
+   - Inside the backend folder of the project, create a .env file.
+   - Add your Hugging Face token like this:
+
+          `HF_TOKEN=hf_your_personal_token_here`
+
+7. Run the Frontend - In the "frontend" folder, open any HTML file (e.g., aboutme.html) in your browser, or use Live Server in VS Code for dynamic updates and navigate the application or ask questions to the AI.
+
