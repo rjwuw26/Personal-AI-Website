@@ -21,6 +21,7 @@ Project Plan
 This is the plan I developed and followed throughout the course of this project.
 
 Stage 1: Backend AI Development Prototype
+
 Goal: Establish a functional AI logic module that operates independently.  
 Status: Done  
 Outcome: A working AI module capable of generating responses.
@@ -32,6 +33,7 @@ Tasks:
 
 
 Stage 2: Flask Backend Skeleton
+
 Goal: Set up a server to connect the frontend interface with the AI.  
 Status: Done  
 Outcome: The AI can now be queried via HTTP requests, enabling smooth frontend integration.
@@ -45,6 +47,7 @@ Tasks:
 
 
 Stage 3: Local Frontend Prototype
+
 **Goal:** Build a functional website interface for interacting with the AI.  
 **Status:** Done  
 **Outcome:** Users can input questions and receive AI responses directly through the website.
@@ -57,6 +60,7 @@ Tasks:
 
 
 Stage 4: AI Upgrade / Real Model Integration
+
 Goal: Replace the prototype AI with a real pretrained model and personal context.  
 Status: Done  
 Outcome: The AI provides contextual and intelligent responses based on integrated personal data.
