@@ -114,7 +114,7 @@ class PersonalAI:
         return top if len(top) < 500 else top[:500].rsplit(" ", 1)[0] + "..."
     """
     
-    # Note: This is the full version of answer_question() with LLaMA generation. Comment out this version to use the simpler one above.
+    # FULL VERSION: This is the full version of answer_question() with LLaMA generation. Comment out this version to use the simpler one above.
     def answer_question(self, question: str) -> str:
         """
         Answers a question using the personal data and LLaMA model generation.
@@ -202,5 +202,6 @@ if __name__ == "__main__":
         if q.lower() in ["quit", "exit"]:
             break
         print("\nAI:", ai.answer_question(q), "\n")
+
 
 
