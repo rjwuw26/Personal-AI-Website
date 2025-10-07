@@ -176,3 +176,9 @@ Full Version - By default, the project is already in Full Version. Make no chang
 
 7. Run the Frontend - In the "frontend" folder, open any HTML file (e.g., aboutme.html) in your browser, or use Live Server in VS Code for dynamic updates and navigate the application or ask questions to the AI.
 
+
+Figure 1: Home page (aboutme.html)
+
+<img width="1846" height="1023" alt="image" src="https://github.com/user-attachments/assets/689fb30e-a2e7-4d0c-a700-65e3c976e7af" />
+
+
