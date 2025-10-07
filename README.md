@@ -69,6 +69,7 @@ Tasks:
 
 
 Stage 5: Frontend Polishing and Styling
+
 Goal: Refine the website design for a professional and responsive appearance.  
 Status: Done  
 Outcome: A portfolio-ready website featuring integrated AI capabilities.
