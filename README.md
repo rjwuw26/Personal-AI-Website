@@ -86,8 +86,23 @@ Tasks:
 
 Running the Project - Below are two viable options for running this project locally
 
-Option One: Demo Mode
+Option One: 
 
-This mode lets anyoneinstantly try the website without needing a Hugging Face account or heavy model files.
-1. 
+Demo Mode - This mode lets anyone instantly try the website without needing a Hugging Face account or heavy model files.
 
+1. Download the files from GitHub and extract anywhere on your computer. Open 'backend' folder in VS Code, terminal, or any workspace.
+
+2. (Optionl) Create a virtual environment:
+
+     python -m venv venv
+
+   To activate:
+
+     Windows:
+       venv\Scripts\activate
+     Linux:
+       source venv/bin/activate
+
+3. Install dependencies - Inside the "backend" folder, run:
+
+     pip install -r requirements.txt
