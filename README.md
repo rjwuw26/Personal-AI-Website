@@ -17,7 +17,8 @@ The frontend provides an interactive chat that lets users naturally learn more a
 
 ---
 
-Project Plan
+Project Plan - 
+
 This is the plan I developed and followed throughout the course of this project.
 
 Stage 1: Backend AI Development Prototype
